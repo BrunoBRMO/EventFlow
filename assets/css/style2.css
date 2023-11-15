@@ -1,0 +1,2224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(62.74deg, #171717 1.21%, #232323 39.95%, #4A4A4A 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+}
+
+
+
+
+/* eventos.php */
+
+.cabecalho_eventos{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_eventos{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_eventos{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_eventos a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_eventos a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.container_eventos_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_eventos{
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #616363;
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px 20px;
+    font-size: small;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_eventos a{  
+    color: white;
+    text-decoration: none;
+}
+
+.caixa_eventos a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.nome_usuario_eventos{
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+    font-size: small;
+}
+
+#todos_os_eventos{
+    color: white;
+}
+
+#nome_nenhum_evento_encontrado{
+    color: white;
+}
+
+/* barra de pesquisa */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+  }
+  
+  .input {
+    max-width: 190px;
+    height: 100%;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #53535f;
+    caret-color: #f7f7f8;
+    color: #fff;
+    padding: 7px 10px;
+    border: 2px solid transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-right: 1px;
+    transition: all .2s ease;
+  }
+  
+  .input:hover {
+    border: 2px solid #50C7F6;
+  }
+  
+  .input:focus {
+    border: 2px solid #50C7F6;
+    background-color: #0e0e10;
+  }
+  
+  .search__btn {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(42, 42, 45, 1);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search__btn:hover {
+    background-color: #616363;
+  }
+
+  /* Copyright - 2023 benjimich (Benjamin) 
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+
+
+  
+
+/* perfil.php */
+
+.container_perfil{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_perfil{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_perfil{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_perfil a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_perfil a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.container_perfil_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.informacoes_perfil{
+    color: white;
+    font-size: x-large;
+    background-color: #616363;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+}
+
+#nome_informacoes_do_perfil{
+    padding: 10px;
+}
+
+.dados_perfil{
+    padding: 10px 20px;
+}
+
+.editar_informações{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.editar_informações a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+    
+.editar_informações a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* eventos_criados.php */
+
+.cabecalho_eventos_criados{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_eventos_criados{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_eventos_criados{
+    position: absolute;
+    left: 25%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_eventos_criados a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_eventos_criados a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.container_eventos_criados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_eventos_criados {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #616363;
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px 20px;
+    font-size: medium;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_eventos_criados a{  
+    color: white;
+    text-decoration: none;
+}
+
+.caixa_eventos_criados a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.eventos_criados a:hover {
+    color: black;
+    transition: color 0.5s;
+}
+
+#nome_eventos_criados{
+    color: white;
+    font-size: 30px;
+}
+
+.nome_usuario_eventos button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+    
+.nome_usuario_eventos button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* relatorio.php */
+
+.cabecalho_relatorio{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_relatorio{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_relatorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_relatorio{
+    color: #fff;
+    border-radius: 10px;
+    margin: 90px;
+    background-color: #616363;
+    width: 40%;
+    padding: 10px 20px;
+    font-size: medium;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_historico_ingressos{
+    color: #fff;
+}
+
+.relatorio_info a{
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.relatorio_info a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.relatorio_voltar button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 10px;
+}
+    
+.relatorio_voltar button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* relatorio_evento.php */
+
+.cabecalho_relatorio_evento{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_relatorio_evento{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_relatorio_evento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_relatorio_evento{
+    color: #fff;
+    border-radius: 10px;
+    margin: 90px;
+    background-color: #616363;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: larger;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_historico_ingressos{
+    color: #fff;
+}
+
+.relatorio_evento_voltar a{
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.relatorio_evento_voltar a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.relatorio_evento_voltar button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 10px;
+}
+    
+.relatorio_evento_voltar button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* criar_eventos.php */
+
+.cabecalho_criar_eventos{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_criar_eventos{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_criar_evento{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px; 
+}
+
+.botoes_criar_evento a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_criar_evento a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.cabecalho_criar_eventos_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    top: 130%; 
+}
+
+.caixa_criar_eventos{
+    color: white;
+    font-size: medium;
+    background-color: #616363;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+}
+
+.informacoes_criar_eventos input{
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: none;
+}
+
+.informacoes_criar_eventos {
+    text-align: start;
+ }
+
+#nome_criar_evento{
+    padding: 5px;
+    font-size: 200%;
+}
+
+.botao_criar_evento{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.botao_criar_evento button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    margin-top: 1px;
+}
+    
+.botao_criar_evento button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+#nome_evento_criado{
+    padding: 10px;
+}
+
+.voltar_criar_eventos{
+    text-align: center;
+    padding: 5px;
+}
+
+.voltar_criar_eventos a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+    
+.voltar_criar_eventos a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* editar_perfil.php */
+
+.container_editar_perfil{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between; 
+}
+
+.botoes_editar_perfil{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;   
+}
+
+.botoes_editar_perfil a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_editar_perfil a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.salvar_voltar{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.salvar_voltar button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: medium;
+    text-decoration: none;
+}
+    
+.salvar_voltar button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.container_editar_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    top: 170%;
+}
+
+.caixa_editar_perfil{
+    color: white;
+    font-size: x-large;
+    background-color: #616363;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+}
+
+.editar_informacoes_perfil{
+    padding: 10px 10px;
+}
+
+.editar_informacoes_perfil input{
+    width: 15rem;
+    margin: 0.3rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+}
+
+
+
+
+/* info_evento.php */
+
+.container_info_evento{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between; 
+}
+
+.logo_info_evento{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_info_evento{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;   
+}
+
+.botoes_info_evento a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_info_evento a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.container_info_evento_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    margin-top: 90px;
+}
+
+.caixa_info_evento{
+    width: 50%;
+    color: white;
+    font-size: large;
+    background-color: #616363;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+}
+
+.caixa_info_evento_2{
+     font-size: large;
+}
+
+.botoes_caixa_info_evento{
+    padding: 3px;
+}
+
+.botoes_caixa_info_evento a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+    
+.botoes_caixa_info_evento a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.botoes_caixa_info_evento button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 1px;
+    font-size: 15px;
+    text-decoration: none;
+}
+    
+.botoes_caixa_info_evento button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.informacoes_info_evento input{
+    width: 4rem;
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    border: none;
+}
+
+
+
+
+/* editar_evento.php */
+
+.cabecalho_editar_evento{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_editar_evento{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_editar_evento{
+    position: absolute;
+    left: 25%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px; 
+}
+
+.botoes_editar_evento a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_editar_evento a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.cabecalho_editar_evento_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+.caixa_editar_evento{
+    color: white;
+    font-size: large;
+    background-color: #616363;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+}
+
+.informacoes_editar_evento input{
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: none;
+}
+
+.informacoes_editar_evento {
+    text-align: start;
+ }
+
+.atualizar_editar_evento{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.atualizar_editar_evento button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    margin-top: 1px;
+}
+    
+.atualizar_editar_evento button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.excluir_editar_evento{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.excluir_editar_evento input{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: medium;
+    text-decoration: none;
+}
+    
+.excluir_editar_evento input:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* loja.php */
+
+.cabecalho_loja{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_loja{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_loja{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_loja a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_loja a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+#nome_loja{
+    color: #fff;
+}
+
+.botao_cadastro_produto a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: larger;
+}
+    
+.botao_cadastro_produto a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.container_loja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+    margin-top: 80px;
+}
+
+.caixa_loja{
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #616363;
+    width: 32%;
+    padding: 10px 20px;
+    font-size: large;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.item_loja{
+    color: #fff;
+}
+
+#nenhum_produto_disponivel_na_loja{
+    color: white;
+}
+
+.caixa_loja a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+}
+    
+.caixa_loja a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.caixa_loja button{
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+    left: 5px;
+    position: relative;
+}
+    
+.caixa_loja button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* cadastrar_produto.php */
+
+.cabecalho_cadastrar_produto{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_cadastrar_produto{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_cadastrar_produto{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_cadastrar_produto a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_cadastrar_produto a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+#nome_cadastrar_produto{
+    font-size: 160%;
+}
+
+.container_cadastrar_produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    margin-top: 80px;
+}
+
+.caixa_cadastrar_produto{
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #616363;
+    width: calc(30% - 100px); /* Adjust the width as needed */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+#nome_cadastro_de_produtos{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#nenhum_produto_disponivel_na_loja{
+    color: white;
+}
+
+.caixa_cadastrar_produto input{
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: none;
+}
+
+.caixa_cadastrar_produto a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+}
+    
+.caixa_cadastrar_produto a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.caixa_cadastrar_produto button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+}
+    
+.caixa_cadastrar_produto button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* editar_item.php */
+
+.cabecalho_editar_item{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_editar_item{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_editar_item{
+    position: absolute;
+    left: 20%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_editar_item a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_editar_item a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+#nome_loja{
+    color: #fff;
+}
+
+.container_editar_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+    margin-top: 6%;
+}
+
+.caixa_editar_item{
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #616363;
+    width: calc(30% - 100px); /* Adjust the width as needed */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_editar_item input{
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: none;
+}
+
+.itens_loja{
+    color: navy;
+}
+
+#nenhum_produto_disponivel_na_loja{
+    color: white;
+}
+
+.caixa_editar_item a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+}
+    
+.caixa_editar_item a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.caixa_editar_item button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Poppins;
+}
+    
+.caixa_editar_item button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* info_produto.php */
+
+.cabecalho_info_produto{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_info_produto{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_info_produto{
+    position: absolute;
+    left: 30%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_info_produto a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_info_produto a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.nome_informações_do_produto{
+    position: relative;
+    margin-top: 5%;
+    color: #fff;
+}
+
+.container_info_produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_info_produto{
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #616363;
+    width: calc(30% - 100px); /* Adjust the width as needed */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_info_produto h2{
+    color: #fff;  
+}
+
+.form_info_produto input{
+    
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: none;
+}
+
+.form_info_produto label{
+    color: white;
+    font-size: 20px;
+}
+
+.form_info_produto a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+}
+    
+.form_info_produto a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.form_info_produto button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    text-decoration: none;
+}
+
+#nome_cadastro_de_produtos{
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#nenhum_produto_disponivel_na_loja{
+    color: white;
+}
+
+
+
+
+/* carrinho.php */
+
+.cabecalho_carrinho{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background-color: #4e4e4e;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #50C7F6;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_carrinho{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_carrinho{
+    position: absolute;
+    left: 40%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_carrinho a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_carrinho a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+#nome_carrinho{
+    position: relative;
+    margin-top: 5%;
+    color: #fff;
+}
+
+.container_carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.conteudo_carrinho{
+    color: white;
+    font-size: x-large;
+    background-color: #4A4A4A;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80,199,246,0.75);
+}
+
+.itens_carrinho {
+    color: #fff;
+    left: 35%;
+    position: relative;
+}
+
+.itens_carrinho button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: medium;
+}
+    
+.itens_carrinho button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.itens_carrinho a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: larger;
+    text-decoration: none;
+}
+    
+.itens_carrinho a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+#nome_o_carrinho_esta_vazio{
+    color: #fff;
+}
+
+#nome_usuario_eventos{
+    color: white;
+    padding: 70px;
+    font-size: small;
+}
+
+#nome_nenhum_produto_encontrado{
+    color: white;
+    border: 3px solid #50C7F6;
+}
+
+
+
+
+/* processar_acao.php */
+
+.cabecalho_processar_acao{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_processar_acao{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.botoes_processar_acao{
+    position: absolute;
+    left: 25%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;  
+}
+
+.botoes_processar_acao a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.botoes_processar_acao a:hover {
+    color: #50C7F6;
+    transition: color 0.5s;
+}
+
+.container_processar_acao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_processar_acao{
+    color: #fff;
+    border-radius: 10px;
+    margin: 100px;
+    background-color: #616363;
+    width: 34%;
+    padding: 10px 20px;
+    font-size: larger;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_processar_acao a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.caixa_processar_acao a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* concluir_compra.php */
+
+.cabecalho_concluir_compra{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_concluir_compra{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_concluir_compra {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.informacoes_concluir_compra{
+    position: relative;
+    left: 25%;
+    color: #fff;
+    border-radius: 10px;
+    top: 80px;
+    margin: 10px;
+    background-color: #4e4e4e;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: large;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_concluir_compra input{
+    margin: 0.3rem;
+    height: 1rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    border: none;
+}
+
+.caixa_concluir_compra button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+}
+    
+.caixa_concluir_compra button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* historico_ingressos.php */
+
+.cabecalho_historico_ingressos{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_historico_ingressos{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_historico_ingressos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_historico_ingressos{
+    color: #fff;
+    border-radius: 10px;
+    margin: 90px;
+    background-color: #616363;
+    width: 40%;
+    padding: 10px 20px;
+    font-size: larger;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_historico_ingressos{
+    color: #fff;
+}
+
+.caixa_historico_ingressos a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.caixa_historico_ingressos a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* historico.php */
+
+.cabecalho_historico{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_historico{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_historico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_historico{
+    color: #fff;
+    border-radius: 10px;
+    margin: 90px;
+    background-color: #616363;
+    width: 40%;
+    padding: 10px 20px;
+    font-size: larger;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_historio{
+    color: #fff;
+}
+
+.caixa_historio a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.caixa_historio a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* adicionar_carrinho.php */
+
+.cabecalho_adicionar_carrinho{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_adicionar_carrinho{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_adicionar_carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.caixa_adicionar_carrinho{
+    color: #fff;
+    border-radius: 10px;
+    margin: 90px;
+    background-color: #616363;
+    width: 40%;
+    padding: 10px 20px;
+    font-size: larger;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_adicionar_carrinho{
+    color: #fff;
+}
+
+.caixa_adicionar_carrinho a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.caixa_adicionar_carrinho a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+
+
+
+/* processar_compra.php */
+
+.cabecalho_compra_concluida{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    top: -45%;
+    justify-content: space-between;
+}
+
+.logo_compra_concluida{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    display: flex;
+}
+
+.container_compra_concluida {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.informacoes_compra_concluida{
+    position: relative;
+    left: 25%;
+    color: #fff;
+    border-radius: 10px;
+    top: 70px;
+    margin: 20px;
+    background-color: #4e4e4e;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: large;
+    box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -webkit-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+    -moz-box-shadow: 0px 2px 20px 10px rgba(80, 199, 246, 0.75);
+}
+
+.caixa_concluir_compra button{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+}
+    
+.caixa_concluir_compra button:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.caixa_processar_compra a{
+    display: inline-block;
+    background-color: #50C7F6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: large;
+    text-decoration: none;
+}
+    
+.caixa_processar_compra a:hover {
+    color: blue;
+    transition: color 0.5s;
+}
+
+/* avaliar evento */
+
+#nome_avaliar_evento{
+    margin-top: 20px;
+}
+
+.rating {
+    position: relative;
+    right: 180px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+  }
+  
+  .rating input {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating svg {
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+    from {
+      stroke-dashoffset: 24;
+    }
+  }
+  
+  .rating label:hover svg {
+    stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+    0% {
+      transform: scale(1);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30% {
+      transform: scale(0);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30.1% {
+      stroke: var(--fill);
+      stroke-dasharray: 0;
+      stroke-linejoin: miter;
+      stroke-width: 8px;
+    }
+  
+    60% {
+      transform: scale(1.2);
+      fill: var(--fill);
+    }
+  }
+  
+  /* Copyright - 2023 SelfMadeSystem  
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
+
+
+
+
+  .Btn {
+    --black: #50C7F6;
+    --ch-black: #50C7F6;
+    --eer-black: #50C7F6;
+    --night-rider: #50C7F6;
+    --white: var(--stroke);
+    --af-white: var(--stroke);
+    --ch-white: var(--stroke);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--night-rider);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: var(--af-white);
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--af-white);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+
+
+  /* Copyright - 2023 vinodjangid07 
+  Copyright - 2023 kennyotsu-monochromia (kennyotsu monochromia) 
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
